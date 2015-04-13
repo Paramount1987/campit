@@ -1,0 +1,107 @@
+.tab-content
+  text-align: left
+  padding-bottom: 60px
+
+.nav-tab
+  margin-bottom: 50px
+  padding-top: 20px
+  li
+    display: inline-block
+    position: relative
+    a
+      color: #7b7b83
+      text-decoration: none
+      text-transform: uppercase
+      font-family: 'proxima_nova_rgbold'
+      letter-spacing: 1px
+      display: inline-block
+      background: url("../i/icons/red-line.png") repeat-x 
+      line-height: 30px
+      background-position: left bottom
+
+.nav-tab li.active a
+  color: #21232d
+  background: none
+  cursor: default
+
+.nav-tab li + li:before
+  content: "|"
+  color: #7b7b83
+  display: inline-block
+  margin: 0 20px
+  font-family: 'proxima_nova_ltlight'
+
+
+
+.tab-content .tab-pane
+  display: none
+
+.tab-content .tab-pane.active
+  display: block
+
+
+.tab-content .tab-pane
+  .float-left
+    width: 560px
+  .float-right
+    width: 165px
+    font-size: 13px
+  #map
+    clear: both    
+    padding-top: 40px
+
+.list-things
+  ul
+    padding-left: 40px
+    margin-top: 15px
+    margin-bottom: 20px
+    li
+      border: 0
+      padding: 0
+      text-indent: -5px
+      &:before
+        content: "-"
+        position: relative
+        left: -5px  
+
+.list-things h4
+  text-transform: none
+  margin-bottom: 15px
+
+.list-things > li
+  position: relative
+  padding-left: 140px
+  margin-bottom: 40px
+  &:before
+    content: ""
+    display: block
+    width: 105px
+    height: 105px
+    position: absolute
+    top: 0
+    left: 0
+    background: url("../i/icons/sprite-things.png") no-repeat
+
+.list-things > li.second:before
+  background-position: 0 -163px
+
+.list-things > li.third:before
+  background-position: 0 -320px
+
+.list-things > li.fourth:before
+  background-position: 0 -496px
+
+////////////////////////////
+.tab-content .tab-pane .tab-content-map
+  position: relative
+  height: 480px
+  clear: both
+  padding-top: 40px
+  margin-bottom: 40px
+  overflow: visible
+  #map
+    position: absolute
+    width: 1200px
+    height: 480px
+    top: 0
+    left: -95px

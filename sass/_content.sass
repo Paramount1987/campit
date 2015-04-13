@@ -1,0 +1,758 @@
+.middle
+  overflow: hidden
+
+.content .row > p
+  margin: 15px 0
+
+h1
+  font-family: 'proxima_nova_rgbold'
+  font-size: 42px
+
+h4
+  font-family: 'proxima_nova_rgbold'
+  text-transform: uppercase
+  font-size: 18px
+
+h4.blue
+  color: $blue
+  padding-bottom: 20px
+  border-bottom: 1px solid #ebebeb
+
+h5
+  font-size: 18px
+
+b
+  font-family: "proxima_nova_rgbold"
+
+.content
+  padding-bottom: 60px
+  a
+    text-decoration: underline
+  .red-button
+    text-decoration: none  
+
+
+.content
+  ul   
+    padding-left: 40px
+    margin-top: 15px
+    li
+      border: 0
+      padding: 0
+      text-indent: -7px
+      &:before
+        content: "\2014"
+        position: relative
+        left: -5px  
+
+.content .programms ul
+  padding-left: 0
+
+
+.red-button
+  background: $red
+  display: inline-block
+  padding: 12px 25px
+  text-align: center
+  text-transform: uppercase
+  text-decoration: none
+  color: #fff 
+  border: 0
+  font-size: 12px
+  @include transition(all linear .2s)
+  &:hover,
+  &:focus
+    color: #fff
+    text-decoration: none
+    background: darken($red,15%)
+
+.blue-link
+  border: 0
+  font-size: 15px !important
+  background: transparent
+  color: $blue !important
+  cursor: pointer
+  outline: 0
+  text-decoration: underline
+  &:hover
+    text-decoration: none
+
+.important-info
+  font-size: 23px
+  margin: 40px 0 20px 0
+
+.text-center
+  text-align: center
+
+.small-text
+  font-size: 12px
+
+.red-text
+  color: $red  
+
+.blue-text
+  color: $blue
+
+.red-link
+  color: $red 
+  &:hover
+    color: $red 
+    text-decoration: none
+
+.float-left
+  float: left
+
+.float-right
+  float: right
+
+.dashed-link
+  text-decoration: none
+  border-bottom: 1px dashed $blue
+
+.icon-doc
+  display: block
+  width: 17px
+  height: 23px
+  margin: 0 auto 5px auto
+  background: url("../i/icons/sprite-icons.png") 0 -220px
+
+.icon-compass
+  display: block
+  width: 25px
+  height: 25px
+  margin: 0 auto 5px auto
+  background: url("../i/icons/sprite-icons.png") -38px -220px
+
+
+.icon-tw,
+.icon-fb,
+.icon-vk  
+  display: inline-block
+  margin: 0 5px
+  height: 20px
+  width: 20px
+  background: url("../i/icons/sprite-icons.png") 0 -281px
+
+.icon-fb
+  background-position: -40px -280px
+
+.icon-tw
+  background-position: -80px -280px
+
+.icon-photo
+  display: inline-block
+  margin-right: 7px
+  position: relative
+  top: -7px
+  height: 25px
+  width: 30px
+  background: url("../i/icons/sprite-icons.png") -134px -275px
+
+.programms
+  margin-top: 50px
+//////////////////////////////////////////////////
+.programm-wrap
+  text-align: center
+  padding-bottom: 105px
+  ul
+    font-size: 0
+    li
+      display: inline-block
+      vertical-align: top
+      width: 25%
+      text-align: center
+      text-transform: uppercase
+      font-size: 12px
+      @include transition(all linear .2s)
+      a
+        color: #000
+        display: block
+
+.programm-list li
+  padding: 40px 15px
+  .icon
+    display: block
+    margin: 0 auto 15px auto
+    width: 95px
+    height: 95px
+    background: url("../i/icons/sprite-programm.png") no-repeat
+
+.programm-list li
+  .icon-1
+    background-position: 2px 0
+
+.programm-list li
+  .icon-2
+    background-position: 20px -107px
+
+.programm-list li
+  .icon-3
+    background-position: 4px -242px
+
+.programm-list li
+  .icon-4
+    background-position: 15px -415px
+
+.programm-wrap li:hover
+  background: $blue
+  a
+    color: #fff
+    text-decoration: none
+
+.programm-wrap li:hover
+  .icon-1
+    background-position: -157px 0
+
+.programm-wrap li:hover
+  .icon-2
+    background-position: -176px -107px
+
+.programm-wrap li:hover
+  .icon-3
+    background-position: -156px -242px
+
+.programm-wrap li:hover
+  .icon-4
+    background-position: -166px -415px
+/////////////////////////////////////
+
+.performance-wrap
+  background: $orange
+  text-align: center
+  position: relative
+  margin-bottom: 50px
+  padding-top: 30px
+  padding-bottom: 30px
+  &:before
+    content: ""
+    position: absolute
+    top: -20px
+    left: 0
+    z-index: 10
+    width: 100%
+    display: block
+    background: url("../i/icons/bg-orange.png") repeat-x
+    height: 20px
+  &:after
+    content: ""
+    position: absolute
+    bottom: -20px
+    left: 0
+    z-index: 10
+    width: 100%
+    display: block
+    background: url("../i/icons/bg-orange.png") repeat-x 0 -20px
+    height: 20px  
+
+.speaker-list
+  text-align: justify
+  margin-top: 100px
+  li
+    display: inline-block
+    vertical-align: top
+    text-align: center
+    margin-bottom: 100px
+    padding-top: 40px
+    width: 32%
+    @include transition(all linear .2s)
+    .img-responsive
+      margin: auto
+      width: 160px
+      position: absolute
+      top: -110px
+      left: 50%
+      margin-left: -80px
+      z-index: 2 
+  &:after
+    content: ""
+    display: inline-block
+    width: 100%      
+
+.speaker-list
+  .body-speaker
+    position: relative
+    z-index: 1
+    padding: 50px 15px 30px 15px
+    border: 5px solid transparent
+    @include transition(all linear .2s)
+    h4
+      font-size: 15px
+    a
+      color: $blue  
+      font-size: 15px
+    p
+      font-size: 18px  
+      line-height: 18px
+      margin-top: 15px
+
+.speaker-list li:hover
+  .body-speaker
+    border-color: $blue
+    background: #fff
+
+/////////////////////////////////////////////
+.company-wrap
+  padding-bottom: 50px
+
+.company-item
+  margin-bottom: 50px
+  h4
+    text-align: center
+
+.company-item .company-list
+  border-top: 1px solid #d7d7d7
+  padding-top: 20px
+  margin-left: -10px
+  li
+    display: inline-block
+    vertical-align: middle
+    text-align: center
+    width: 145px
+    margin-right: 10px
+    margin-top: 15px
+    margin-bottom: 20px
+    img
+      max-width: 100%
+
+.company-item .company-list li.last
+  text-align: right
+  position: relative
+
+
+.company-item .company-list-short li.last
+  right: 9px
+
+.company-item .company-list-short li
+  width: 115px
+
+.company-item .company-list .link-partner
+  background: #e3e3e5
+  width: 115px
+  display: inline-block
+  color: #21232d
+  text-decoration: underline
+  padding-left: 35px
+  text-align: left
+  position: relative
+  &:hover
+    text-decoration: none
+    background: darken(#e3e3e5,15%)
+
+.icon-ok
+  display: inline-block
+  width: 19px
+  height: 19px
+  background: url("../i/icons/sprite-icons.png")
+  background-position: -83px -222px
+
+.company-item .link-partner .icon-ok
+  position: absolute
+  top: 18px
+  left: 7px
+/////////////////////////////////////////
+.map-wrap
+  text-align: center   
+  padding: 20px 0 40px 0 
+  position: relative
+  margin-bottom: 50px
+
+#map
+  height: 480px
+  padding-top: 10px
+  margin-bottom: 40px
+
+.map-wrap:after
+  content: ""
+  display: block
+  position: absolute
+  width: 100%
+  height: 15px
+  bottom: -15px
+  background: url("../i/icons/map-bg.png") repeat-x
+
+.link-small
+  color: #21232d
+  text-decoration: underline
+  font-size: 12px
+  letter-spacing: 0.5px
+  display: inline-block
+  &:hover
+    color: #21232d
+    text-decoration: none
+
+///////////////////
+.day-programm ul li
+  border-bottom: 1px solid #ebebeb
+  padding: 20px 30px
+  &:before
+    display: none
+
+.day-programm 
+  margin-bottom: 40px
+  .title
+    background: #ebebeb
+    color: #33a9e5
+    font-size: 20px
+    padding: 20px 30px
+    text-transform: uppercase
+    span
+      text-transform: none
+  .time-programm
+    font-family: "proxima_nova_rgbold"  
+    font-size: 16px
+    display: table-cell
+    vertical-align: top
+    width: 100px
+  .text-programm
+    display: table-cell
+    vertical-align: middle
+    padding-left: 90px  
+    ul   
+      padding-left: 40px
+      margin-top: 15px
+      li
+        border: 0
+        padding: 0
+        text-indent: -7px
+        &:before
+          content: "\2014"
+          display: inline-block
+          position: relative
+          left: -5px
+
+.day-programm .programm-body
+  display: table-cell
+  vertical-align: middle
+  padding-left: 40px
+  .name
+    text-transform: uppercase
+    font-family: "proxima_nova_rgbold"
+    font-size: 14px
+  .theme
+    color: $blue  
+    font-size: 14px
+    margin-bottom: 10px
+  b
+    font-size: 14px  
+
+
+.programm-speaker 
+  display: table
+  table-layout: fixed
+  width: 100%  
+  .time-programm
+    display: table-cell
+    vertical-align: middle
+    width: 100px
+    font-size: 13px
+    color: #595f71
+  .img-wrap
+    display: table-cell
+    vertical-align: middle  
+    width: 110px
+    overflow: hidden
+  img
+    vertical-align: top  
+    display: block
+    max-width: 100%
+
+////////////////////////////////////
+.partisipants
+  text-align: center
+  .people-registred
+    text-align: right
+    position: relative
+    top: -62px
+
+.partisipants-table
+  width: 100%
+  table-layout: fixed
+  margin-bottom: 30px
+  text-align: left
+  font-size: 14px
+  thead
+    background: #ebebeb
+  tbody
+    tr
+      border-bottom: 1px solid #ebebeb 
+    td
+      padding: 10px 0
+      vertical-align: middle
+      img
+        margin-right: 20px
+        display: inline-block
+        vertical-align: middle
+        width: 55px
+        height: 55px
+      .name
+        display: inline-block  
+        vertical-align: middle
+        width: 255px
+
+.partisipants-table thead th
+  height: 65px
+  font-weight: normal
+  .company-title,
+  .job-title
+    border-bottom: 1px dashed #21232d
+    cursor: pointer
+  .people-title
+    cursor: pointer  
+  .active
+    color: $red
+    font-family: "proxima_nova_rgbold"  
+
+.partisipants-table thead th:first-child,
+.partisipants-table tbody td:first-child
+  width: 380px
+  padding-left: 25px
+  padding-right: 20px
+
+.partisipants-table tbody td:first-child
+  text-transform: uppercase
+  font-family: "proxima_nova_rgbold"
+
+.partisipants-table thead th:last-child
+  width: 140px
+
+
+.arrow
+  display: inline-block
+  width: 7px
+  height: 5px
+  background: url("../i/icons/arrows.png") 0 0
+  position: relative
+  top: -1px
+  left: 4px
+
+.arrow-top
+  background-position: 0 0
+
+.arrow-bottom
+  background-position: 0 -10px
+/////////////////////////////////////////////////////////
+.partners-wrap
+  text-align: center
+  padding-top: 10px
+
+.partners-list
+  font-size: 0
+  text-align: left
+  margin-bottom: 20px
+  li
+    display: inline-block
+    width: 50%
+    font-size: 13px
+    margin-bottom: 30px
+    &:before
+      display: none
+
+.partners-list li
+  a
+    color: #353b43
+    display: table
+    text-decoration: none
+    &:hover
+      text-decoration: none
+      .title
+        text-decoration: underline
+  .img-wrap
+    display: table-cell
+    vertical-align: middle
+    width: 130px
+    height: 100%
+    border: 1px solid #ebebeb
+    padding: 2px
+    text-align: center
+    img
+      max-width: 100%
+      display: block
+      margin: auto
+  .partner-body
+    display: table-cell
+    vertical-align: top
+    padding-left: 35px
+    width: 350px
+    .title
+      display: block
+      text-transform: uppercase
+      font-size: 18px
+      margin-bottom: 10px
+      color: #000 
+
+
+.partners-list.general-partner
+  margin-bottom: 70px
+  li
+    display: block
+    width: 100%
+    .img-wrap
+      width: 280px
+    .partner-body
+      width: 660px
+      font-size: 15px
+      padding-left: 60px
+    .title
+      text-transform: none
+      font-size: 28px    
+/////////////////////////////////////////////////////
+.block-anounce
+  color: $blue
+  border: 6px solid #ebebeb
+  padding: 25px 52px
+  font-size: 22px
+  margin: 40px 0
+
+///////////////////////////////////////////////
+.list-transport
+  margin-left: -20px
+  padding-top: 20px
+  li
+    display: inline-block
+    vertical-align: top
+    width: 30%
+    margin-left: 20px
+  .dashed-link
+    font-size: 12px
+    display: inline-block
+    margin-top: 10px
+    letter-spacing: 1px  
+ 
+
+.list-transport .icon
+  display: block
+  width: 110px
+  height: 80px
+  background: url("../i/icons/sprite-transport.png") no-repeat
+
+.list-transport .icon-bus
+  background-position: -207px 0
+
+.list-transport .icon-self
+  background-position: -425px 0
+/////////////////////////////////////////////////////
+.wrap-contact
+  display: inline-block
+  vertical-align: top
+  width: 74%
+  padding-right: 50px
+
+.contact-table
+  width: 100%
+  table-layout: fixed
+  .name
+    font-family: "proxima_nova_rgbold"
+    text-transform: uppercase
+    font-size: 15px
+  td
+    padding: 18px 8px 
+    vertical-align: top
+    .phone-td
+      font-size: 15px
+    .mail-td
+      padding-top: 30px  
+
+.contact-table td:first-child
+  width: 90px
+  padding-left: 0
+  padding-top: 0
+
+.contact-table td:nth-child(2)
+  width: 280px
+
+.contact-table td:last-child
+  text-align: right
+  width: 120px
+  padding-right: 0
+
+.feedback-wrap
+  display: inline-block
+  vertical-align: top
+  padding: 20px 20px 40px 20px
+  width: 25%
+  @include box-shadow( 0 0 45px 1px rgba(0,0,0,.09))
+  h4
+    text-transform: none
+    border-bottom: 2px solid #f4f4f4
+    padding-bottom: 10px
+    font-size: 22px
+    margin-top: 15px
+  label
+    display: block
+    margin-bottom: 5px
+  .form-control
+    background: #f4f4f4
+    width: 100%
+  textarea.form-control
+    height: 80px
+    padding-top: 10px
+
+#modal-partner textarea.form-control
+  height: 110px
+  padding-top: 10px
+
+#modal-partner  .modal-dialog
+  margin-top: 20px
+  p
+    margin-bottom: 20px
+/////////////////////////////////////
+.social-widget
+  padding-left: 50px
+  padding-top: 40px
+
+#vk_campit
+  margin-bottom: 40px
+
+.fb-page
+  margin-bottom: 40px
+
+
+.partners-list li .img-wrap.no-border
+  border: 0
+  padding: 0
+///////////////////////////////////////////
+.social-list-inner
+  padding: 0 !important
+  margin: 0 !important
+  li
+    padding: 0
+    display: inline-block
+    &:before
+      display: none
+
+.social-list-inner a
+  width: 31px
+  height: 31px
+  display: inline-block
+  margin: 0 4px !important
+
+.social-list-inner a.invisible
+  position: relative
+  z-index: -1
+  @include opacity(0)
+
+.social-list-inner .icon-vk
+  background-position: 0 -477px
+
+.social-list-inner .icon-fb
+  background-position: -57px -477px
+
+.social-list-inner .icon-tw
+  background-position: -105px -477px
+
+/////////////////////////////////////////
+#modal-schedule .modal-dialog
+  margin: 20px auto 0 auto
+
+#modal-schedule  .modal-body
+  padding: 0 35px 0 35px
+
+.schedule-item
+  border-top: 2px solid #f4f4f4
+  .red-text
+    padding: 20px 0
+
+.schedule-title
+  margin: 20px 0 5px 0
+  color: $blue
+  font-family: "proxima_nova_rgbold"

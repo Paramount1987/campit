@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campit</title>
+    <link href="style/screen.css" rel="stylesheet" media="all">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <!-- Modal -->
+<div class="modal fade" id="modal-cabinet" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Вход в личный кабинет</h4>
+        <a href="#">Регистрация</a>
+      </div>
+      <div class="modal-body">
+          <form>
+                <div class="form-group">
+                  <label for="email-user">E-mail:</label>
+                  <input type="email" class="form-control" id="email-user" >
+                </div>
+                <div class="form-group">
+                  <label for="password-user">Пароль:</label>
+                  <input type="password" class="form-control" id="password-user" >
+                </div>
+                <button type="submit" class="red-button">Войти</button>
+          </form>
+      </div>
+      <div class="modal-footer">
+       <h5>Войти с помощью</h5>
+       <ul class="social-list">
+          <li><a href="#" class="icon-vk"></a></li>
+          <li><a href="#" class="icon-fb"></a></li>
+          <li><a href="#" class="icon-tw"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Modal -->
+
+    <div class="wrapper">
+  
+      <header>
+
+        <div class="top-header">
+          <div class="container">
+
+            <div class="row ">
+              <div class="col-md-6">
+                <ul class="list-year">
+                  <li><a href="#" class="link active">2015</a></li>
+                  <li><a href="#" class="link">2014</a></li>
+                  <li><a href="#" class="link">2013</a></li>
+                  <li><a href="#" class="link">2012</a></li>
+                  <li><a href="#" class="link">2011</a></li>
+                  <li><a href="#" class="link">2010</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <div class="pull-right">
+                  <ul class="social-list">
+                    <li><a href="#" class="icon-vk"></a></li>
+                    <li><a href="#" class="icon-fb"></a></li>
+                    <li><a href="#" class="icon-tw"></a></li>
+                  </ul>
+                  <a href="#" class="link-dotted" data-toggle="modal" data-target="#modal-cabinet">Личный кабинет</a>
+                </div>
+              </div>
+            
+            </div><!-- end row -->
+
+          </div><!-- end container -->
+        </div>
+
+        <div class="middle-header">
+          <div class="container">
+            <div class="row">
+              <a href="#" class="col-md-3 logo-header"><img src="i/logo-top.png" alt=""></a>
+              <div class="col-md-5 short-info">
+                <p class="date"><b>25-27 июля</b></p>
+                <p>База отдыха «Буревестник», Заволжье</p>
+              </div>
+              <div class="col-md-4">
+                <a href="#" class="pull-right link-registr">зарегистрироваться</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </header>
+
+      <nav>
+        <ul class="list-nav">
+          <li><a href="#" class="link">О мероприятии</a></li>
+          <li class="active"><a href="#" class="link">Программа</a></li>
+          <li><a href="#" class="link">Участники</a></li>
+          <li><a href="#" class="link">Партнеры</a></li>
+          <li><a href="#" class="link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="middle">
+        <div class="wrap-main-slider">
+          <div class="inner-slider">
+            <ul class="main-slider">
+              <li>
+                <h4>IT-Camp 2013 – ежегодный съезд</h4>
+                <p>it-специалистов в чувашской республике</p>
+                <div class="body-slider">
+                  <p>
+                    Мероприятие проводится на Поляне Слёта между базой отдыха «Буревестник» и пляжем «Авторадио» с 26 по 28 июля.
+                  </p>
+                </div>
+                <img src="i/slide.jpg" alt="">
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>  
+
+        </div>
+        <div class="programm-wrap">
+          <div class="container">
+            <div class="row">
+              <h4>В программе мероприятия</h4>
+              <ul class="programm-list">
+                <li><a href="#"><i class="icon icon-1"></i>Доклады от экспертов <br />IT-области</a></li>
+                <li><a href="#"><i class="icon icon-2"></i>Замечательные и <br />оригинальные конкурсы</a></li>
+                <li><a href="#"><i class="icon icon-3"></i>соревнования по лазертегу <br />с призами от спонсоров</a></li>
+                <li><a href="#"><i class="icon icon-4"></i>Душевные посиделки <br />и беседы около костра</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="performance-wrap">
+          <div class="container">
+            <div class="row">
+              <h4>Выступления</h4>
+              <ul class="speaker-list">
+                <li>
+                  
+                  <div class="body-speaker">
+                    <img src="i/people.png" alt="" class="img-responsive">
+                    <h4>Дмитрий Патин</h4>
+                    <a href="#">Интернет-дискаунтер «СИТИЛИНК»</a>
+                    <p>Как выгодно, удобно, быстро и беспроблемно покупать в Ситилинк</p>
+                  </div>  
+                </li>
+                <li>
+                  <div class="body-speaker">
+                    <img src="i/people-1.png" alt="" class="img-responsive">
+                    <h4>Алина Шолкова</h4>
+                    <a href="#">Digital-Агентство «UPLAB»</a>
+                    <p>Автоматизация процессов в IT-компании</p>
+                  </div>    
+                </li>
+                <li>
+                  <div class="body-speaker">
+                    <img src="i/people-2.png" alt="" class="img-responsive">
+                    <h4>Серафимова Тимарашкина</h4>
+                    <a href="#">«МегаФон»</a>
+                    <p>ЦОД МегаФона - новые возможности для бизнеса и облака</p>
+                  </div>   
+                </li>
+                <li>
+                  <div class="body-speaker">
+                    <img src="i/people-3.png" alt="" class="img-responsive">
+                    <h4>Александра Петрова</h4>
+                    <a href="#">«Инфолинк»</a>
+                    <p>Городское видеонаблюдение на базе сервисов "Видеоконтроль</p>
+                  </div>   
+                </li>
+                <li>
+                  <div class="body-speaker">
+                    <img src="i/people-4.png" alt="" class="img-responsive">
+                    <h4>Евгений Афанасьев</h4>
+                    <a href="#">Журнал "IT-news"</a>
+                    <p>Телекоммуникационная инфраструктура в экстремальных условиях</p>
+                  </div>   
+                </li>
+                <li>
+                  <div class="body-speaker">
+                    <img src="i/people-5.png" alt="" class="img-responsive">
+                    <h4>Дана Письменных</h4>
+                    <a href="#">Команда веб-разработчиков «BrandyMint»</a>
+                    <p>Архитектура современных веб-приложений</p>
+                  </div>   
+                </li>
+              </ul>
+
+              <a href="#" class="link-small"><i class="icon-doc"></i> Вся программа</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-wrap">
+          <h4>Как проехать</h4>
+          <div id="map">
+            
+          </div>
+          <a href="#" class="link-small"><i class="icon-compass"></i> Подробнее о месте проведения</a>
+        </div>
+
+          <div class="company-wrap">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="company-item">
+                    <h4>организаторы</h4>
+                    <ul class="company-list">
+                      <li><a href="#"><img src="i/megafon.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/sitilink.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/uplab.jpg" alt=""></a></li>
+                      <li class="last"><a href="#" class="link-partner"><i class="icon-ok"></i>Стать партнером</a></li>
+                    </ul>
+                  </div>  
+                  <div class="company-item">
+                    <h4>партнеры</h4>
+                    <ul class="company-list">
+                      <li><a href="#"><img src="i/gis.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/young.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/sespel.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/21region.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/profkom.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/expo.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/artvideo.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/auto-radio.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/itcamp.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/drweb.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/milk.jpg" alt=""></a></li>
+                      <li class="last"><a href="#" class="link-partner"><i class="icon-ok"></i>Стать партнером</a></li>
+                    </ul>
+                  </div> 
+                  <div class="company-item">
+                    <h4>спонсоры</h4>
+                    <ul class="company-list company-list-short">
+                      <li><a href="#"><img src="i/gis.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/young.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/sespel.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/21region.jpg" alt=""></a></li>
+                      <li class="last"><a href="#" class="link-partner"><i class="icon-ok"></i>Стать партнером</a></li>
+                    </ul>
+                  </div> 
+                  <div class="company-item">
+                    <h4>информационные партнеры</h4>
+                    <ul class="company-list company-list-short">
+                      <li><a href="#"><img src="i/profkom.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/young.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/sespel.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/21region.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/auto-radio.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/expo.jpg" alt=""></a></li>
+                      <li><a href="#"><img src="i/artvideo.jpg" alt=""></a></li>
+                      <li class="last"><a href="#" class="link-partner"><i class="icon-ok"></i>Стать партнером</a></li>
+                    </ul>
+                  </div> 
+                </div>
+                <div class="col-md-4 social-widget">
+                  <div id="vk_campit"></div>
+                  <script type="text/javascript">
+                  VK.Widgets.Group("vk_campit", {mode: 0, width: "260", height: "300"}, 15777272);
+                  </script>
+
+                  <div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="260" data-height="300" data-hide-cover="true" data-show-facepile="true" data-show-posts="false"></div>
+                  <div class="widget-tw">
+                      <a class="twitter-timeline" href="https://twitter.com/Camp_It_Aus" data-widget-id="585418860452519937">Твиты от @Camp_It_Aus</a>
+                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                  </div>
+                </div>
+              </div>  
+            </div><!-- end row -->
+          </div>
+
+      </div><!-- end middle -->
+
+   
+    </div><!-- end wrapper -->
+
+    <footer id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <a href="#" class="logo-footer"><img src="i/logo-bottom.png" alt=""></a>
+              <p class="copy-right">2015 © CAMPIT</p>
+            </div>
+            <div class="col-md-4">
+              <div class="teaser-info">
+                <p class="date">25-27 июля</p>
+                <p class="spot">База отдыха<br /> «Буревестник», Заволжье</p>
+                <a href="#" class="link-partner">стань участником</a>
+              </div>  
+            </div>
+            <div class="col-md-3">
+              <ul class="list-nav-bottom">
+                <li><a href="#">О мероприятии</a></li>
+                <li><a href="#">Программа</a></li>
+                <li><a href="#">Участники</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <div class="contacts-wrap">
+                <p class="title-contact">Есть вопросы?</p>
+                <p class="title-mail">пишите: <a href="mailto:info@uplab.ru">info@uplab.ru</a> </p>
+                <p>звоните: +7 8352 55 60 5</p>
+              </div>
+              <ul class="social-list">
+                    <li><a href="#" class="icon-vk"></a></li>
+                    <li><a href="#" class="icon-fb"></a></li>
+                    <li><a href="#" class="icon-tw"></a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      
+    </footer><!-- end footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"> </script>
+    <script src="js/jquery.fancybox.pack.js" type="text/javascript"> </script>
+    <script src="js/jquery.bxslider.min.js" type="text/javascript"> </script>
+    <script src="js/main.js" type="text/javascript"> </script>
+    
+        <script type="text/javascript">
+          ymaps.ready(function () {
+            var myMap = new ymaps.Map('map', {
+                center: [56.17439675, 47.24706416],
+                zoom: 13,
+                controls: [ ],
+
+            });
+
+            myPlacemark = new ymaps.Placemark([56.17439675, 47.24706416], {
+            // РЎРІРѕР№СЃС‚РІР°.
+            hintContent: 'Буревестник Пансионат'
+        }, {
+            iconImageHref: 'i/mark.png',
+            iconImageSize: [24, 83],
+            iconImageOffset: [0, 0]
+        });
+
+          myMap.behaviors.disable('scrollZoom');
+            myMap.geoObjects.add(myPlacemark)
+        });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+/* Sticky footer styles----------------- */
+html 
+  position: relative
+  min-height: 100%
+
+body 
+  /* Margin bottom by footer height */
+  margin-bottom: 280px
+
+#footer
+  position: absolute
+  bottom: 0
+  width: 100%
+  min-width: 980px
+  padding-top: 50px
+  height: 280px
+  background-color: $dark
+  .social-list
+    margin-top: 30px
+
+#footer .copy-right 
+  color: #949599
+  font-size: 12px
+
+#footer .logo-footer
+  display: block
+  margin-bottom: 107px
+
+.teaser-info
+  text-transform: uppercase
+  font-size: 15px
+  letter-spacing: 0.5px
+  padding-left: 30px
+  .date
+    color: $red
+    font-family: 'proxima_nova_rgbold'
+    font-size: 33px
+  .spot
+    color: #fff  
+    margin-bottom: 25px
+
+.link-partner
+  background: $blue
+  display: inline-block
+  width: 200px
+  padding: 15px 5px
+  text-align: center
+  color: #fff
+  font-size: 13px
+  @include transition(all linear .2s)
+  &:hover
+    text-decoration: none
+    color: #fff
+    background: darken($blue,15%)
+
+.list-nav-bottom
+  li
+    margin-bottom: 10px
+    a
+      color: $dark-light
+      font-size: 18px
+      &:hover
+        text-decoration: underline
+
+.contacts-wrap
+  color: #fff
+  font-size: 15px
+  text-transform: uppercase
+  .title-contact
+    text-transform: none
+    font-size: 28px
+    margin-bottom: 20px
+  .title-mail
+    margin-bottom: 10px
+    a
+      border-bottom: 1px solid rgba(110, 101, 105, 1)
+      &:hover,
+      &:focus
+        border: 0
+        text-decoration: none  
+  a
+    color: #fff
